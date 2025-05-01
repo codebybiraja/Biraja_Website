@@ -15,7 +15,7 @@ const EducationSection = () => {
       title: "Class 10 - CBSE Board",
       institution: "Kendriya Vidyalaya",
       description:
-        "Completed Class 10 with 95% marks. Received appreciation for outstanding performance in Mathematics and Science subjects.",
+        "Completed Class 10 with 90% marks. Received appreciation for outstanding performance in Mathematics and Science subjects.",
     },
     {
       year: "2020 - 2022",
