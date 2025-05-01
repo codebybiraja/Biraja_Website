@@ -16,9 +16,6 @@ const SkillsSection = () => {
     { name: "HTML/CSS", level: 70 },
     { name: "JavaScript", level: 60 },
     { name: "Python", level: 75 },
-    { name: "C++", level: 65 },
-    { name: "MS Office", level: 80 },
-    { name: "Problem Solving", level: 85 },
   ];
 
   const softSkills = [
