@@ -7,7 +7,6 @@ const SkillsSection = () => {
     { name: "Physics", level: 85 },
     { name: "Mathematics", level: 90 },
     { name: "Chemistry", level: 80 },
-    { name: "Biology", level: 75 },
     { name: "Computer Science", level: 85 },
     { name: "English", level: 80 },
   ];
@@ -19,14 +18,12 @@ const SkillsSection = () => {
   ];
 
   const softSkills = [
-    "Team Collaboration",
     "Public Speaking",
-    "Leadership",
     "Time Management",
     "Critical Thinking",
     "Communication",
     "Adaptability",
-    "Research Skills",
+    "Quick Understanding",
   ];
 
   return (
