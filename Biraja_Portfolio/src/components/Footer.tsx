@@ -15,19 +15,19 @@ const Footer = () => {
           
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://github.com/codebybiraja"
               className="w-10 h-10 rounded-full bg-white/10 dark:bg-gold/20 flex items-center justify-center hover:bg-white/20 dark:hover:bg-gold/30 transition-colors"
             >
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="www.linkedin.com/in/biraja-prasad-routray-235b33362"
               className="w-10 h-10 rounded-full bg-white/10 dark:bg-gold/20 flex items-center justify-center hover:bg-white/20 dark:hover:bg-gold/30 transition-colors"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/biraja669/"
               className="w-10 h-10 rounded-full bg-white/10 dark:bg-gold/20 flex items-center justify-center hover:bg-white/20 dark:hover:bg-gold/30 transition-colors"
             >
               <Instagram className="w-5 h-5" />
@@ -45,7 +45,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-blue-200 dark:text-gold/70 text-sm">
-            &copy; {currentYear} Rahul Sharma. All rights reserved.
+            &copy; {currentYear} Developed by Ashirbad Routray & Biraja Routray. All rights reserved.
           </p>
           
           <nav className="flex gap-6 mt-4 md:mt-0">
