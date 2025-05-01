@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+
+    --radius: 0.5rem;
+    
+    /* Gold color for dark theme */
+    --gold: 41 100% 70%;
+    --gold-muted: 41 70% 60%;
+    --dark-bg: 220 10% 10%;
+    --dark-card: 220 10% 15%;
+    --dark-secondary: 220 10% 20%;
+  }
+
+  .dark {
+    --background: 220 10% 10%;
+    --foreground: 41 100% 70%;
+
+    --card: 220 10% 15%;
+    --card-foreground: 41 100% 70%;
+
+    --popover: 220 10% 15%;
+    --popover-foreground: 41 100% 70%;
+
+    --primary: 41 100% 70%;
+    --primary-foreground: 220 10% 10%;
+
+    --secondary: 220 10% 20%;
+    --secondary-foreground: 41 100% 70%;
+
+    --muted: 220 10% 20%;
+    --muted-foreground: 41 70% 60%;
+
+    --accent: 41 70% 50%;
+    --accent-foreground: 220 10% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 41 30% 40%;
+    --input: 41 30% 40%;
+    --ring: 41 100% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold mb-8 text-kv-navy dark:text-gold relative inline-block;
+}
+
+.section-title::after {
+  content: '';
+  @apply absolute -bottom-2 left-0 w-3/4 h-1 bg-kv-teal dark:bg-gold/70 rounded-full;
+}
+
+/* Removed the skill-bar and skill-progress classes */
+
+.timeline-item {
+  @apply relative pl-8 pb-8;
+}
+
+.timeline-item::before {
+  content: '';
+  @apply absolute left-1 top-2 w-4 h-4 bg-kv-teal dark:bg-gold rounded-full;
+}
+
+.timeline-item::after {
+  content: '';
+  @apply absolute left-2.5 top-6 w-0.5 h-full bg-gray-200 dark:bg-gold/20;
+}
+
+.timeline-item:last-child::after {
+  @apply h-0;
+}
+
+.hover-card {
+  @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1 dark:hover:shadow-gold/20;
+}
